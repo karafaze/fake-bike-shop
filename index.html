@@ -9,7 +9,10 @@
             href="./assets/icons/web_tab_icon.jpeg"
         />
 
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.min.css" rel="stylesheet"/>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.min.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <title>Document</title>
@@ -34,40 +37,54 @@
                 </li>
             </ul>
         </header>
-        <section class="banner">
-            <!-- use background-image in css, path : ./assets/images/banner-background.jpeg -->
-            <p class="banner--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, fugiat dicta! Sed illum error dicta omnis molestiae quam perferendis nam?</p>
-        </section>
-        <section class="articleContainer">
-            <article class="article">
-                <div class="article--image">
-                    <img style="width:5em; object-fit: contain;" src="./assets/images/kona.jpeg" alt="kona bike">
-                </div>
-                <div class="article--body">
-                    <h2 class="article--title">Kona</h2>
-                    <p class="article--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eaque?</p>
-                    <div class="article--rating">
-                        <div class="article--rating__stars">
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-fill"></i>
-                            <i class="ri-star-line"></i>
-                        </div>
-                        <div class="article--rating__total">
-                            - 47 avis
-                        </div>
+
+        <main>
+            <section class="banner">
+                <!-- use background-image in css, path : ./assets/images/banner-background.jpeg -->
+                <p class="banner--text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum, fugiat dicta! Sed illum error dicta omnis molestiae
+                    quam perferendis nam?
+                </p>
+            </section>
+
+            <section class="articleContainer">
+                <article class="article">
+                    <div class="article--image">
+                        <img
+                            style="width: 5em; object-fit: contain"
+                            src="./assets/images/kona.jpeg"
+                            alt="kona bike"
+                        />
                     </div>
-					<p class="article--price">799.90€</p>
-					<!-- waiting for cart page to be active, use button instead -->
-					<!-- <a href="./cart/index.html" class="article--cta">Panier</a> -->
-					<button>Add to cart</button>
-                </div>
-            </article>
-        </section>
-		<footer class="footer">
-			<ul class="footer--items">
-				<li class="footer--items__single">
+                    <div class="article--body">
+                        <h2 class="article--title">Kona</h2>
+                        <p class="article--description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Adipisci, eaque?
+                        </p>
+                        <div class="article--rating">
+                            <div class="article--rating__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <div class="article--rating__total">- 47 avis</div>
+                        </div>
+                        <p class="article--price">799.90€</p>
+                        <!-- waiting for cart page to be active, use button instead -->
+                        <!-- <a href="./cart/index.html" class="article--cta">Panier</a> -->
+                        <button>Add to cart</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <ul class="footer--items">
+                <li class="footer--items__single">
                     <img
                         src="./assets/images/company_logo.png"
                         width="100"
@@ -75,10 +92,12 @@
                         alt="company logo"
                     />
                 </li>
-				<li class="footer--items__single">Contact</li>
-				<li class="footer--items__single">Inscrit toi à la newsletter</li>
-				<li class="footer--items__single">Conditions générales </li>
-			</ul>
-		</footer>
+                <li class="footer--items__single">Contact</li>
+                <li class="footer--items__single">
+                    Inscrit toi à la newsletter
+                </li>
+                <li class="footer--items__single">Conditions générales</li>
+            </ul>
+        </footer>
     </body>
 </html>

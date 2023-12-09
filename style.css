@@ -145,12 +145,29 @@ main {
 }
 
 .article {
+	position: relative;
     display: flex;
     flex-direction: column;
     height: 25em;
     width: 95%;
     border-radius: 20px 20px 5px 5px;
     box-shadow: 0px 11px 22px -7px #000000;
+	cursor: pointer;
+}
+
+.article:hover {
+	box-shadow: 7px 11px 22px -7px #000000;
+}
+
+.article--outofstock {
+	position: absolute;
+	display: block;
+	border: 1px solid rgb(130, 129, 129);
+	padding: .3em ;
+	right: .5em;
+	top: .5em;
+	border-radius: 5px;
+	color: rgb(91, 91, 91);
 }
 
 .article--image {

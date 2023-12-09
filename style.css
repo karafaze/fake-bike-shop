@@ -166,7 +166,6 @@ main {
     object-fit: contain;
 }
 
-
 .article--body {
     position: relative;
     height: 35%;
@@ -199,17 +198,18 @@ main {
 }
 
 .article--rating__stars {
-	font-size: 1.1em;
+    font-size: 1.1em;
     display: flex;
     gap: 0.2em;
 }
 
 .article--rating__total {
-	font-size: 1em;
+    font-size: 1em;
+	margin-top: 0.1em;
 }
 
 .article--price {
-	font-family: roboto-black;
+    font-family: roboto-black;
     font-size: 1.1em;
 }
 
@@ -229,12 +229,11 @@ main {
     font-family: roboto-black;
 }
 
-
 @media only screen and (min-width: 501px) {
     .article {
         flex-direction: row;
         border-radius: 20px 20px 5px 5px;
-		height: 21em;
+        height: 21em;
     }
     .article--image {
         width: 50%;
@@ -249,36 +248,91 @@ main {
     .article--title {
         font-size: 1.4em;
         margin-bottom: 1em;
-        margin-left: .75em;
-		margin-right: .5em;
+        margin-left: 0.75em;
+        margin-right: 0.5em;
     }
     .article--description {
-		font-style: initial;
+        font-style: initial;
         font-size: 1em;
         margin-bottom: 1.8em;
         margin-left: 1em;
-		margin-right: .5em;
+        margin-right: 0.5em;
     }
     .article--rating {
         margin-bottom: 1.8em;
         margin-left: 1em;
-		margin-right: .5em;
-    }
-    .article--rating__stars {
-        font-size: 1.2em;
+        margin-right: 0.5em;
     }
     .article--rating__total {
-		font-size: 1.1em;
-        margin-top: 0.1em;
-		margin-right: .5em;
+        font-size: 1.1em;
+        margin-right: 0.5em;
     }
     .article--price {
         margin-left: 1em;
-		margin-right: .5em;
+        margin-right: 0.5em;
         font-size: 1.3em;
     }
     .article--cta {
         bottom: 1em;
         right: 1em;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    .articleContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+		justify-content: center;
+        padding: 0 1em;
+    }
+    .article {
+        flex-direction: column;
+        width: 20em;
+        height: 30em;
+    }
+    .article--image {
+        width: initial;
+        height: 65%;
+    }
+    .article--body {
+        height: 35%;
+        width: initial;
+        padding: 1em 1em 0.5em 1em;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .article--title {
+        font-family: roboto-black;
+        font-size: 1.3em;
+        margin-left: initial;
+        margin-right: initial;
+        margin-bottom: 0.2em;
+    }
+    .article--description {
+        font-size: 1.1em;
+        margin-left: initial;
+        margin-right: initial;
+        margin-bottom: 0.8em;
+    }
+	.article--rating {
+		margin-bottom: 0.8em;
+		margin-left: initial;
+		margin-right: initial;
+	}
+	.article--rating__stars {
+		margin-top: initial;
+		margin-right: initial;
+	}
+	.article--rating__total {
+		font-size: 1em;
+        margin-right: initial;
+	}
+	.article--price {
+        margin-left: initial;
+        margin-right: initial;
+        font-size: 1.2em;
+    }
+	.article--cta {
+        bottom: .5em;
+        right: .5em;
     }
 }

@@ -29,6 +29,12 @@ body {
     font-family: roboto-regular;
 }
 
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 /* HEADER */
 .header {
     margin: 1em 0.5em;
@@ -100,3 +106,31 @@ body {
 }
 
 /* BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/banner-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    height: 12em;
+    width: 100%;
+}
+
+.banner--text {
+	color: #fff;
+	text-transform: capitalize;
+	font-family: roboto-bold;
+	width: 70%;
+	text-align: center;
+}
+
+@media screen and (min-width: 780px) {
+	.banner {
+		height: 15em;
+	}
+	.banner--text {
+		width: 60%;
+	}
+}

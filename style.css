@@ -252,7 +252,7 @@ main {
     font-family: roboto-black;
 }
 
-.kona-bike h1 {
+.kona-bike {
     color: black;
     text-align: center;
     padding-bottom: 0.5em;
@@ -443,11 +443,6 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  h2 {
-    text-align: center;
-    color: #333;
   }
 
   form {
